@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Send notification to Mega Repository
         run: |
-          curl -X POST \
+          curl -X POST -u \
             -H "Authorization: Bearer ${{ secrets.MEGA_REPO_TOKEN }}" \
             -H "Accept: application/vnd.github.everest-preview+json" \
             -H "Content-Type: application/json" \
             -d '{"event_type": "update_from_api"}' \
-            https://api.github.com/repos/CMP315/Project/dispatches
+            https://api.github.com/repos/CMP315/Project/actions/workflows/sync.yml/dispatches
