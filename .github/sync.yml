@@ -1,0 +1,19 @@
+name: Notify Mega Repository
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify_mega_repository:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send notification to Mega Repository
+        uses: octokit/request-action@v2.x
+        with:
+          route: POST /repos/:owner/:repo/dispatches
+          owner: CMP315
+          repo: Project
+          token: ${{ secrets.MEGA_REPO_TOKEN }}
+          event_type: update_from_api
