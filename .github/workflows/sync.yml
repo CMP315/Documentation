@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Send notification to Mega Repository
         run: |
-          curl -X POST -u \
+          curl -X POST \
             -H "Authorization: Bearer ${{ secrets.MEGA_REPO_TOKEN }}" \
             -H "Accept: application/vnd.github.everest-preview+json" \
             -H "Content-Type: application/json" \
