@@ -1,9 +1,6 @@
-# ‘Passman’ - A Secure
-
-# Password Manager
-### CMP 315 : Secure Software Engineering
-### BSc Cybersecurity Year 3 (2023 / 24)
-### Credit: Ewan Taylor, Liam Townsley, Owen Walker, Jack Barnett & Ryan van Ee
+# ‘Passman’ - A Secure Password Manager
+### CMP 315 : Secure Software Engineering // BSc Cybersecurity Year 3 (2023 / 24)
+### *Credit: Ewan Taylor, Liam Townsley, Owen Walker, Jack Barnett & Ryan van Ee*
 ___
 
 **Abstract [Liam T]**
